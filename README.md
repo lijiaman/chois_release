@@ -74,7 +74,7 @@ python render_res_w_blender.py
 ```
 
 ### Training 
-Train CHOIS (generating object motion and human motion given text, object geometry, and initial states). Please replace ```--entity``` with your account name. 
+Train CHOIS (generating object motion and human motion given text, object geometry, and initial states). Please replace ```--entity``` with your account name. Note that when you first run this script, it need to extract BPS representation for all the sequences and may take more than 1 hour to finish the data processing. It requires about 32G disk space. 
 ```
 sh scripts/train_chois.sh
 ```
