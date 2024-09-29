@@ -1,5 +1,5 @@
-# Controllable Human-Object Interaction Synthesis
-This is the official implementation for the [paper](https://arxiv.org/pdf/2312.03913). For more information, please check the [project webpage](https://lijiaman.github.io/projects/chois/).
+# Controllable Human-Object Interaction Synthesis (ECCV 2024 Oral)
+This is the official implementation for the ECCV 2024 [paper](https://arxiv.org/pdf/2312.03913). For more information, please check the [project webpage](https://lijiaman.github.io/projects/chois/).
 
 ![CHOIS Teaser](chois_teaser.png)
 
@@ -48,10 +48,10 @@ Please download [SMPL-X](https://smpl-x.is.tue.mpg.de/index.html) and put the mo
 
 If you would like to generate visualizations, please download [Blender](https://www.blender.org/download/) first. And modify ```BLENDER_PATH, BLENDER_UTILS_ROOT_FOLDER, BLENDER_SCENE_FOLDER``` in line 8-10 of ```chois_release/manip/vis/blender_vis_mesh_motion.py```. 
 
-Please download all the [data]() and put ```processed_data``` to your desired location ```your_path/processed_data```.  
+Please download all the [data](https://drive.google.com/file/d/1ZG-9--RfUWj5oWYnvcONNuRuxaH_Zpw1/view?usp=sharing) and put ```processed_data``` to your desired location ```your_path/processed_data```.  
 
 ### Testing: Generating a single-window interaction sequence for OMOMO objects.  
-Please download pretrained [model]() and put ```pretrained_models/``` to the root folder. If you'd like to test on 3D-FUTURE objects, please add ```--unseen_objects```. For quantitative evaluation please add ```--for_quant_eval```.
+Please download pretrained [model](https://drive.google.com/drive/folders/1gqw3EHiEMqw1OXqH92Axoc5FJntA_E5x?usp=sharing) and put ```pretrained_models/``` to the root folder. If you'd like to test on 3D-FUTURE objects, please add ```--unseen_objects```. For quantitative evaluation please add ```--for_quant_eval```.
 ```
 sh scripts/test_chois_single_window.sh 
 ```
@@ -80,9 +80,10 @@ sh scripts/train_chois.sh
 ```
 
 ### Computing Evaluation Metrics (FID, R-precision)
-We follow prior work on human motion generation (Generating Diverse and Natural 3D Human Motions from Text. CVPR 2022.) for evaluating human motion quality and text-motion consistency. Since the motion distribution in our paper is different from HumanML3D, we trained a feature extractor on OMOMO dataset (Object Motion Guided Human Motion Synthesis. SIGGRAPH Asia 2023.). We provided a trained feature extractor [here]().
+We followed prior work on human motion generation (Generating Diverse and Natural 3D Human Motions from Text. CVPR 2022.) for evaluating human motion quality and text-motion consistency. Since the motion distribution in our paper is different from HumanML3D, we trained corresponding feature extractors on OMOMO dataset (Object Motion Guided Human Motion Synthesis. SIGGRAPH Asia 2023.). We provided trained feature extractors [here](https://drive.google.com/drive/folders/1hGDYEy91Tk7FC1U_8BouhlSp5RQkEJuY?usp=sharing). To run this evaluation, please check the code and modify corresponding paths for feature extractors and the results that you need to evaluate. 
 ```
-
+cd t2m_eval/
+python final_evaluations.py 
 ```
 
 ### Generating new data for scene-aware interaction synthesis.  
