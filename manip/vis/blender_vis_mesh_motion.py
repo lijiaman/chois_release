@@ -5,9 +5,9 @@ import imageio
 import numpy as np 
 import shutil 
 
-BLENDER_PATH = "/viscam/u/jiamanli/blender-3.6.3-linux-x64/blender" # Put your blender path here 
-BLENDER_UTILS_ROOT_FOLDER = "/move/u/jiamanli/github/chois_release/manip/vis" # Put the manip/vis folder absolute path here 
-BLENDER_SCENE_FOLDER = "/move/u/jiamanli/for_chois_release/processed_data/blender_files" # Put the blender_files folder (where your store .blend files) absolute path here
+BLENDER_PATH = "blender-3.6.3-linux-x64/blender" # Put your blender path here 
+BLENDER_UTILS_ROOT_FOLDER = "chois_release/manip/vis" # Put the manip/vis folder absolute path here 
+BLENDER_SCENE_FOLDER = "./processed_data/blender_files" # Put the blender_files folder (where your store .blend files) absolute path here
 
 def concat_multiple_videos(input_files, output_file):
     # List of input files

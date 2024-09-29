@@ -1,9 +1,9 @@
 python trainer_chois.py \
 --window=120 \
 --batch_size=32 \
---data_root_folder="/move/u/jiamanli/for_chois_release/processed_data" \
---project="/viscam/projects/manip_motion/chois_release_exp_output" \
---exp_name="chois_window_120_set2" \
+--data_root_folder="./processed_data" \
+--project="./chois_release_exp_output" \
+--exp_name="chois_window_120_set1" \
 --wandb_pj_name="chois_interaction_diffusion" \
 --entity="jiamanli" \
 --input_first_human_pose \

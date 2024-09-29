@@ -1,9 +1,9 @@
 python trainer_chois.py \
 --window=120 \
 --batch_size=32 \
---data_root_folder="/move/u/jiamanli/for_chois_release/processed_data" \
---pretrained_model="/move/u/jiamanli/for_chois_release/pretrained_models/model-10.pt" \
---save_res_folder="/move/u/jiamanli/for_chois_release/chois_single_window_results" \
+--data_root_folder="./processed_data" \
+--pretrained_model="./pretrained_models/model-10.pt" \
+--save_res_folder="./chois_single_window_results" \
 --input_first_human_pose \
 --use_random_frame_bps \
 --add_language_condition \
