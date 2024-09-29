@@ -13,6 +13,6 @@ python trainer_chois.py \
 --loss_w_fk=0.5 \
 --loss_w_obj_pts=1 \
 --test_sample_res \
---use_guidance_in_denoising \
---test_unseen_objects
+--use_guidance_in_denoising
+# --test_unseen_objects
 # --for_quant_eval

@@ -50,14 +50,14 @@ If you would like to generate visualizations, please download [Blender](https://
 
 Please download all the [data](https://drive.google.com/file/d/1ZG-9--RfUWj5oWYnvcONNuRuxaH_Zpw1/view?usp=sharing) and put ```processed_data``` to your desired location ```your_path/processed_data```.  
 
-### Testing: Generating a single-window interaction sequence for OMOMO objects.  
+### Testing: Generating single-window interaction sequences for OMOMO objects.  
 Please download pretrained [model](https://drive.google.com/drive/folders/1gqw3EHiEMqw1OXqH92Axoc5FJntA_E5x?usp=sharing) and put ```pretrained_models/``` to the root folder. If you'd like to test on 3D-FUTURE objects, please add ```--unseen_objects```. For quantitative evaluation please add ```--for_quant_eval```.
 ```
 sh scripts/test_chois_single_window.sh 
 ```
 
-### Testing on long sequence generation 
-Note that this following command is to generate long sequence visualizations in an empty floor. If you'd like to visualize in a 3D scene, please check the instruction below. 
+### Testing: Generating scene-aware long sequence for OMOMO objects.  
+Note that this following command will generate long sequence visualizations in an empty floor. If you'd like to visualize in a 3D scene, please check next instruction below. 
 ```
 sh scripts/test_chois_long_seq_in_scene.sh 
 ```
